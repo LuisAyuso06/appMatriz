@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #333;
-    color: white;
+    background-color: #76b3f8;
+    color: rgb(0, 0, 0);
   }
   
   input {
@@ -15,18 +15,18 @@ body {
   button {
     margin: 10px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #485cce;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #0fb300;
   }
   
   h1, h3 {
-    color: #fff;
+    color: #000000;
   }
   
   select {

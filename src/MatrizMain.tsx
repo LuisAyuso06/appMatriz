@@ -27,7 +27,7 @@ const multiplyMatrices = (matrixA: number[][], matrixB: number[][]) => {
   return result;
 };
 
-const MatrixCalculator: React.FC = () => {
+const MatrizMain: React.FC = () => {
   const [size, setSize] = useState(3);
   const [matrixA, setMatrixA] = useState(createEmptyMatrix(size));
   const [matrixB, setMatrixB] = useState(createEmptyMatrix(size));
@@ -46,7 +46,7 @@ const MatrixCalculator: React.FC = () => {
 
   return (
     <div>
-      <h1>Poderosisima Calculadora de Matrices</h1>
+      <h1>Poderosa Calculadora de Matrices</h1>
 
       <div>
         <label>Tamaño de Matriz:</label>
@@ -68,6 +68,7 @@ const MatrixCalculator: React.FC = () => {
       </div>
 
       <div>
+        <h3>Selecciona la Operación</h3>
         <button onClick={handleAddition}>A + B</button>
         <button onClick={handleSubtraction}>A - B</button>
         <button onClick={handleMultiplication}>A × B</button>
@@ -87,4 +88,4 @@ const MatrixCalculator: React.FC = () => {
   );
 };
 
-export default MatrixCalculator;
+export default MatrizMain;
