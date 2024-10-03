@@ -1,0 +1,69 @@
+.panel-agregar-nota {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.styled-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.styled-input:focus {
+  border-color: #f1948a;
+  outline: none;
+  box-shadow: 0 0 5px #f1948a;
+}
+
+textarea.styled-input {
+  resize: vertical;
+  height: 100px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.styled-button {
+  background-color: #f1948a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.styled-button:hover {
+  background-color: white;
+  color: #f1948a;
+  border: 2px solid #f1948a;
+}
+
+.cancel-button {
+  background-color: #f44336;
+}
+
+.cancel-button:hover {
+  background-color: white;
+  color: #f1948a;
+  border: 2px solid #f1948a;
+}

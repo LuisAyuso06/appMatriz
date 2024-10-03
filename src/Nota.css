@@ -1,0 +1,48 @@
+.nota {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .botones {
+    display: none; /* Escondemos los botones por defecto */
+    position: absolute;
+    top: 10px; /* Posiciona los botones en la parte superior */
+    left: 10px; /* Alinea los botones a la izquierda */
+    z-index: 1; /* Asegura que los botones se muestren sobre el contenido */
+  }
+  
+  .nota:hover .botones {
+    display: flex; /* Mostramos los botones al hacer hover en la nota */
+    gap: 2px; /* Espacio entre los botones */
+  }
+  
+  .styled-button1 {
+    background-color: #DAF7A6;
+    color: black;
+    border: none;
+    padding: 2px 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  
+  .styled-button1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #f1948a;
+  }
+  
+  .nota {
+    cursor: grab; /* Cambia el cursor cuando el usuario puede arrastrar la nota */
+  }
+  
+  .nota:active {
+    cursor: grabbing; /* Cambia el cursor cuando se está arrastrando la nota */
+  }
+  
