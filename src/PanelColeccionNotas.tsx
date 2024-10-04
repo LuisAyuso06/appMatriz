@@ -22,7 +22,7 @@ const PanelColeccionNotas: React.FC<{ onClose: () => void }> = ({ onClose }) => 
       text: "¡No podrás revertir esta acción!",
       icon: 'warning',
       showCancelButton: true,
-      confirmButtonText: 'Sí, eliminar',
+      confirmButtonText:'Si, continuar' ,
       cancelButtonText: 'No, cancelar',
       reverseButtons: true
     }).then((result) => {

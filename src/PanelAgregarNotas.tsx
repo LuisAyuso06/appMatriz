@@ -61,8 +61,14 @@ const PanelAgregarNota: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         className="styled-input"
       />
       <div className="button-container">
-        <button onClick={agregarNota} className="styled-button">Guardar</button>
-        <button onClick={onClose} className="styled-button cancel-button">Cancelar</button>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <button onClick={agregarNota} className="styled-button"><span className="material-symbols-outlined">
+bookmark
+</span></button>
+        <button onClick={onClose} className="styled-button cancel-button"><span className="material-symbols-outlined">
+close
+</span></button>
       </div>
     </div>
   );

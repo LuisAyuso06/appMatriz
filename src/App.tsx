@@ -3,6 +3,7 @@ import { NotasProvider } from './NotasContexto'; // Actualiza esta ruta o crea e
 import AppBar from './AppBar';
 import PanelAgregarNota from './PanelAgregarNotas';
 import PanelColeccionNotas from './PanelColeccionNotas';
+import guardar from './guardar.png';
 import './App.css'; // Importa el archivo CSS para los estilos
 
 const App: React.FC = () => {
@@ -15,7 +16,7 @@ const App: React.FC = () => {
         <AppBar />
         <div className="button-container">
           <button className="styled-button" onClick={() => setMostrarPanelAgregar(true)}>
-            Agregar Nota
+            <img src={guardar} alt="Agregar Nota" style={{ width: '20px', height: '20px', color: 'black' }} />
           </button>
           <button className="styled-button" onClick={() => setMostrarPanelColeccion(true)}>
             Ver notas

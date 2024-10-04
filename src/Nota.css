@@ -12,7 +12,7 @@
     display: none; /* Escondemos los botones por defecto */
     position: absolute;
     top: 10px; /* Posiciona los botones en la parte superior */
-    left: 10px; /* Alinea los botones a la izquierda */
+    right: 10px; /* Alinea los botones a la izquierda */
     z-index: 1; /* Asegura que los botones se muestren sobre el contenido */
   }
   

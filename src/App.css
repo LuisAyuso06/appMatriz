@@ -8,7 +8,9 @@
   .button-container {
     display: flex;
     gap: 15px;
+    justify-content: flex-end;
     margin: 20px 0;
+    /* border: 1px solid red; */
   }
   
   .styled-button {
@@ -35,5 +37,9 @@
   .styled-button:focus {
     outline: none;
     box-shadow: 0 0 5px #f1948a;
+  }
+
+  .styled-button img { /* Apply filter on button hover */
+    filter: invert(100%); 
   }
   

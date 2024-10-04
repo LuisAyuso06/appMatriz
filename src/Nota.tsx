@@ -16,8 +16,15 @@ const Nota: React.FC<{ nota: NotaTipo; onEliminar: () => void; onEditar: () => v
         position: 'absolute', // Posiciona de manera absoluta para mover libremente
       }}>
         <div className="botones">
-          <button onClick={onEditar} className="styled-button1">Editar</button>
-          <button onClick={onEliminar} className="styled-button1">Eliminar</button>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+          <button onClick={onEditar} className="styled-button1"><span className="material-symbols-outlined">
+edit_note
+</span></button>
+
+          <button onClick={onEliminar} className="styled-button1"><span className="material-symbols-outlined">
+delete
+</span></button>
         </div>
         <h3 style={{ fontWeight: 500 }}>{nota.titulo}</h3>
         <p>{nota.contenido}</p>
