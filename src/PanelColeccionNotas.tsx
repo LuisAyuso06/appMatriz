@@ -72,8 +72,9 @@ const PanelColeccionNotas: React.FC<{ onClose: () => void }> = ({ onClose }) => 
       <div>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <button onClick={onClose} className="styled-button"><span className="material-symbols-outlined">
-arrow_back
-</span></button>
+visibility_off
+</span>
+          </button>
       </div>
     </>
   );

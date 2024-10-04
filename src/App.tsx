@@ -3,7 +3,6 @@ import { NotasProvider } from './NotasContexto';
 import AppBar from './AppBar';
 import PanelAgregarNota from './PanelAgregarNotas';
 import PanelColeccionNotas from './PanelColeccionNotas';
-import guardar from './guardar.png';
 import './App.css'; 
 
 const App: React.FC = () => {
@@ -15,11 +14,13 @@ const App: React.FC = () => {
       <div className="app-container">
         <AppBar />
         <div className="button-container">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
           <button className="styled-button" onClick={() => setMostrarPanelAgregar(true)}>
-            <img src={guardar} alt="Agregar Nota" style={{ width: '20px', height: '20px', color: 'black' }} />
+          <span className="material-symbols-outlined">add_notes</span>
           </button>
           <button className="styled-button" onClick={() => setMostrarPanelColeccion(true)}>
-            Ver notas
+          <span className="material-symbols-outlined">visibility</span>
           </button>
         </div>
         {mostrarPanelAgregar && <PanelAgregarNota onClose={() => setMostrarPanelAgregar(false)} />}
