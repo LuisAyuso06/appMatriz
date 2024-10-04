@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNotas } from './NotasContexto';
 import { Nota } from './tipos';
-import './PanelAgregarNota.css'; // Importa el archivo CSS para los estilos
+import './PanelAgregarNota.css'; 
 
 const PanelAgregarNota: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   const { despachar } = useNotas();
@@ -63,8 +63,9 @@ const PanelAgregarNota: React.FC<{ onClose: () => void }> = ({ onClose }) => {
       <div className="button-container">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <button onClick={agregarNota} className="styled-button"><span className="material-symbols-outlined">
-bookmark
+save_as
 </span></button>
         <button onClick={onClose} className="styled-button cancel-button"><span className="material-symbols-outlined">
 close

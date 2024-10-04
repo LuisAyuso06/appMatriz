@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { NotasProvider } from './NotasContexto'; // Actualiza esta ruta o crea el contexto necesario
+import { NotasProvider } from './NotasContexto';
 import AppBar from './AppBar';
 import PanelAgregarNota from './PanelAgregarNotas';
 import PanelColeccionNotas from './PanelColeccionNotas';
 import guardar from './guardar.png';
-import './App.css'; // Importa el archivo CSS para los estilos
+import './App.css'; 
 
 const App: React.FC = () => {
   const [mostrarPanelAgregar, setMostrarPanelAgregar] = useState(false);

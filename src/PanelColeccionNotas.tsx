@@ -2,7 +2,7 @@ import React from 'react';
 import { useNotas } from '../src/NotasContexto';
 import Nota from '../src/Nota';
 import Swal from 'sweetalert2';
-import './PanelColeccionNotas.css'; // Asegúrate de importar el CSS
+import './PanelColeccionNotas.css'; 
 
 const PanelColeccionNotas: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   const { estado, despachar } = useNotas();
@@ -11,8 +11,8 @@ const PanelColeccionNotas: React.FC<{ onClose: () => void }> = ({ onClose }) => 
   const handleEliminarNota = (id: string) => {
     const swalWithStyledButtons = Swal.mixin({
       customClass: {
-        confirmButton: 'styled-button swal2-confirm-button',  // Aplica tus clases personalizadas
-        cancelButton: 'styled-button swal2-cancel-button'     // Aplica tus clases personalizadas
+        confirmButton: 'styled-button swal2-confirm-button',  
+        cancelButton: 'styled-button swal2-cancel-button'    
       },
       buttonsStyling: false // Desactiva los estilos por defecto de SweetAlert2
     });
@@ -22,7 +22,7 @@ const PanelColeccionNotas: React.FC<{ onClose: () => void }> = ({ onClose }) => 
       text: "¡No podrás revertir esta acción!",
       icon: 'warning',
       showCancelButton: true,
-      confirmButtonText:'Si, continuar' ,
+      confirmButtonText:'Si, continuar',
       cancelButtonText: 'No, cancelar',
       reverseButtons: true
     }).then((result) => {
@@ -70,7 +70,10 @@ const PanelColeccionNotas: React.FC<{ onClose: () => void }> = ({ onClose }) => 
         ))}
       </div>
       <div>
-        <button onClick={onClose} className="styled-button">Cerrar</button>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <button onClick={onClose} className="styled-button"><span className="material-symbols-outlined">
+arrow_back
+</span></button>
       </div>
     </>
   );

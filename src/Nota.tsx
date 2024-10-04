@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nota as NotaTipo } from '../src/tipos';
 import Draggable from 'react-draggable'; // Importa Draggable
-import './Nota.css'; // Asegúrate de importar el archivo CSS que contiene los estilos
+import './Nota.css'; 
 
 const Nota: React.FC<{ nota: NotaTipo; onEliminar: () => void; onEditar: () => void; }> = ({ nota, onEliminar, onEditar }) => {
   return (
